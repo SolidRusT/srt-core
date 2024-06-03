@@ -5,8 +5,9 @@ Setup your environment
 ```bash
 git clone https://github.com/SolidRusT/srt-core.git
 cd srt-core
-python -m venv venv
-source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+mkdir -p ~/venvs
+python -m venv ~/venvs/venv-srt-core-dev
+source ~/venvs/venv-srt-core-dev/bin/activate  # On Windows use `venv\Scripts\activate`
 pip install -r requirements.txt
 pip install -e .
 ```

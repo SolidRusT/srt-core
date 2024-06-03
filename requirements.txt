@@ -1,9 +1,10 @@
 pyyaml
-llama_cpp_agent
-llama_cpp
-unittest
+llama-cpp-agent
 logging
 twine
 setuptools
 wheel
-# Add any other dependencies you need
+openai
+transformers
+sentencepiece
+protobuf
