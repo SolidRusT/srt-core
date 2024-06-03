@@ -1,16 +1,9 @@
-llama_cpp_agent>=0.2.23
-scikit-build-core
-gradio>=4.31.5
-openai
-duckduckgo_search
-googlesearch-python
-trafilatura
-lxml-html-clean
-lxml
-transformers
-sentencepiece
-protobuf
-bs4
-streamlit
-ragatouille
-chromadb
+pyyaml
+llama_cpp_agent
+llama_cpp
+unittest
+logging
+twine
+setuptools
+wheel
+# Add any other dependencies you need
