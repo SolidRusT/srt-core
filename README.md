@@ -81,4 +81,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-For any inquiries or support, please contact [Your Name](mailto:suparious@solidrust.net).
+For any inquiries or support, please contact [Suparious](mailto:suparious@solidrust.net).
