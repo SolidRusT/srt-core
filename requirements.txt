@@ -1,10 +1,5 @@
 pyyaml
-llama-cpp-agent
 logging
-twine
 setuptools
 wheel
-openai
-transformers
-sentencepiece
-protobuf
+twine
