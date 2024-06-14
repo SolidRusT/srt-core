@@ -9,7 +9,13 @@ nav:
   - Logger: logger.md
 
 theme:
-  name: material
+  name: mkdocs
+  highlightjs: true
+  hljs_languages:
+    - yaml
+    - python
+  #analytics:
+  #  gtag: G-ABC123
 
 markdown_extensions:
   - admonition
@@ -22,5 +28,3 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/SolidRusT/srt-core
-    - icon: fontawesome/brands/readthedocs
-      link: https://srt-core.readthedocs.io/
