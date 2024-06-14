@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='srt-core',
-    version='0.1.7',
+    version='0.1.8',
     packages=find_packages(include=['srt_core', 'srt_core.*']),  # Ensure it includes the srt_core package
     install_requires=[
         'pyyaml',
