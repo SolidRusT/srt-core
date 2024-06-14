@@ -17,13 +17,13 @@ class Config:
 
         # Load provider configuration
         self.default_llm_name = self.get_first_existing_value(
-            ["llm_default", "llms.default"], "default"
+            ["default_llm", "llms.default"], "mistral"  # Change "default" to "mistral"
         )
         self.summary_llm_name = self.get_first_existing_value(
-            ["llm_summary", "llms.summary"], "summary"
+            ["summary_llm", "llms.summary"], "llama3"  # Change "summary" to "llama3"
         )
         self.chat_llm_name = self.get_first_existing_value(
-            ["llm_chat", "llms.chat"], "default"
+            ["chat_llm", "llms.chat"], "chatml"  # Change "default" to "chatml"
         )
         self.load_provider_settings()
 
