@@ -1,5 +1,5 @@
 import unittest
-from config.config import Config
+from srt_core.config import Config
 
 class TestConfig(unittest.TestCase):
     def test_initialization(self):

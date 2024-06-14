@@ -1,5 +1,5 @@
 import unittest
-from utils.logger import Logger
+from srt_core.utils import Logger
 
 class TestLogger(unittest.TestCase):
     def test_initialization(self):
