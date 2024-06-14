@@ -78,9 +78,8 @@ class Config:
 
     def load_embeddings_llm(self):
         self.embeddings_llm = self.get_first_existing_value(
-            ["llm_embeddings", "llms.embeddings"], "BAAI/bge-small-en-v1.5"
+            ["embeddings_llm", "llms.embeddings"], "BAAI/bge-small-en-v1.5"
         )
-        self.embedding_model = self.config["llm_embeddings"]
 
     def load_tools_config(self):
         self.tokens_per_summary = self.config["tokens_per_summary"]
