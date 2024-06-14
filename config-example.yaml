@@ -1,6 +1,6 @@
 schema_version: 1
-app_name: 'SolidRusT Web Search'
-website_url: 'https://search.solidrust.net'
+app_name: 'SolidRusT Core'
+website_url: 'https://github.com/SolidRusT/srt-core'
 openai_compatible_api_key: '<some_key_here>'
 huggingface_api_key: '<some_key_here>'
 logs_path: 'logs'
@@ -36,7 +36,7 @@ llms:
     type: ChatML
     filename: 'Mahou-1.3-mistral-7B-AWQ'
     huggingface: 'solidrust/Mahou-1.3-mistral-7B-AWQ'
-    url: 'http://zelus.hq.solidrust.net:8081'
+    url: 'http://zelus.hq.solidrust.net:8083/v1'
     agent_provider: 'vllm_server'
     server: 'Zelus'
     max_tokens: 25000
