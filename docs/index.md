@@ -67,7 +67,7 @@ For detailed configuration options and examples, please refer to the [Configurat
 
 ## Configuration
 
-The `Config` class provides a robust system for loading configurations from YAML files and environment variables. It includes default values, error handling, and dynamic reloading capabilities. 
+The `Config` class provides a robust system for loading configurations from YAML files and environment variables. It includes default values, error handling, and dynamic reloading capabilities.
 
 Learn more on the [Configuration](config.md) page.
 
