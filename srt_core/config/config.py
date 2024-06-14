@@ -1,6 +1,7 @@
 import os
 import yaml
 
+
 class Config:
     def __init__(self):
         # Load configuration from yaml file
@@ -16,14 +17,18 @@ class Config:
         self.server_name = os.environ.get("SERVER_NAME", "0.0.0.0")
 
         # Load provider configuration
+        unspecified_key="<unspecified_key-from-srt_core-module>"
+        self.openai_compatible_api_key = self.config.get("openai_compatible_api_key", unspecified_key)
+        self.huggingface_api_key = self.config.get("huggingface_api_key", unspecified_key)
+
         self.default_llm_name = self.get_first_existing_value(
-            ["default_llm", "llms.default"], "mistral"  # Change "default" to "mistral"
+            ["default_llm", "llms.default"], "mistral"
         )
         self.summary_llm_name = self.get_first_existing_value(
-            ["summary_llm", "llms.summary"], "llama3"  # Change "summary" to "llama3"
+            ["summary_llm", "llms.summary"], "llama3"
         )
         self.chat_llm_name = self.get_first_existing_value(
-            ["chat_llm", "llms.chat"], "chatml"  # Change "default" to "chatml"
+            ["chat_llm", "llms.chat"], "chatml"
         )
         self.load_provider_settings()
 
@@ -63,7 +68,9 @@ class Config:
         setattr(self, f"{llm_prefix}_llm_filename", llm_settings["filename"])
         setattr(self, f"{llm_prefix}_llm_huggingface", llm_settings["huggingface"])
         setattr(self, f"{llm_prefix}_llm_url", llm_settings["url"])
-        setattr(self, f"{llm_prefix}_llm_agent_provider", llm_settings["agent_provider"])
+        setattr(
+            self, f"{llm_prefix}_llm_agent_provider", llm_settings["agent_provider"]
+        )
         setattr(self, f"{llm_prefix}_llm_server_name", llm_settings["server_name"])
         setattr(self, f"{llm_prefix}_llm_max_tokens", llm_settings["max_tokens"])
 
@@ -72,9 +79,9 @@ class Config:
         self.summary_llm_settings = self.load_llm_settings(self.summary_llm_name)
         self.chat_llm_settings = self.load_llm_settings(self.chat_llm_name)
 
-        self.set_llm_attributes('default', self.default_llm_settings)
-        self.set_llm_attributes('summary', self.summary_llm_settings)
-        self.set_llm_attributes('chat', self.chat_llm_settings)
+        self.set_llm_attributes("default", self.default_llm_settings)
+        self.set_llm_attributes("summary", self.summary_llm_settings)
+        self.set_llm_attributes("chat", self.chat_llm_settings)
 
     def load_embeddings_llm(self):
         self.embeddings_llm = self.get_first_existing_value(
@@ -98,5 +105,6 @@ class Config:
         self.persona_topic_examples = persona["topic_examples"]
         self.persona_temperature = persona["temperature"]
         self.persona_preferences = persona["preferences"]
+
 
 config = Config()
