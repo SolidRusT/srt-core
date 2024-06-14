@@ -1,0 +1,26 @@
+site_name: srt-core Documentation
+site_url: https://srt-core.readthedocs.io/
+repo_url: https://github.com/SolidRusT/srt-core
+edit_uri: ""
+
+nav:
+  - Home: index.md
+  - Configuration: config.md
+  - Logger: logger.md
+
+theme:
+  name: material
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/SolidRusT/srt-core
+    - icon: fontawesome/brands/readthedocs
+      link: https://srt-core.readthedocs.io/
