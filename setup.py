@@ -3,10 +3,9 @@ from setuptools import setup, find_packages
 setup(
     name='srt-core',
     version='0.1.9',
-    packages=find_packages(include=['srt_core', 'srt_core.*']),  # Ensure it includes the srt_core package
+    packages=find_packages(include=['srt_core', 'srt_core.*']),
     install_requires=[
         'pyyaml',
-        'logging',
     ],
     entry_points={
         'console_scripts': [
