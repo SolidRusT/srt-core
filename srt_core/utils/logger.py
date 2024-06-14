@@ -45,6 +45,31 @@ class Logger:
             format="%(asctime)s:%(levelname)s:%(message)s",
         )
 
+        self.logger = logging.getLogger(persona_full_name)
+
+    def debug(self, msg, *args, **kwargs):
+        """Log a message with severity 'DEBUG'."""
+        self.logger.debug(msg, *args, **kwargs)
+
+    def info(self, msg, *args, **kwargs):
+        """Log a message with severity 'INFO'."""
+        self.logger.info(msg, *args, **kwargs)
+
+    def warning(self, msg, *args, **kwargs):
+        """Log a message with severity 'WARNING'."""
+        self.logger.warning(msg, *args, **kwargs)
+
+    def error(self, msg, *args, **kwargs):
+        """Log a message with severity 'ERROR'."""
+        self.logger.error(msg, *args, **kwargs)
+
+    def critical(self, msg, *args, **kwargs):
+        """Log a message with severity 'CRITICAL'."""
+        self.logger.critical(msg, *args, **kwargs)
+
 # Example usage
 if __name__ == "__main__":
     logger = Logger()
+    logger.info("This is an info message.")
+    logger.warning("This is a warning message.")
+    logger.error("This is an error message.")

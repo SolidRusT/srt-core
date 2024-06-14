@@ -39,8 +39,8 @@ from srt_core.utils.logger import Logger
 logger = Logger()
 
 # Example of logging a message
-logging.info("This is an info message.")
-logging.debug("This is a debug message.")
+logger.info("This is an info message.")
+logger.warning("This is a warning message.")
 ```
 
 Ensure you have a `config.yaml` file in the root of your project and set the necessary environment variables:
