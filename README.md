@@ -1,5 +1,7 @@
 # srt-core
 
+[![Documentation Status](https://readthedocs.org/projects/srt-core/badge/?version=latest)](https://srt-core.readthedocs.io/en/latest/?badge=latest)
+
 SolidRusT Core Libraries
 
 ## Overview
