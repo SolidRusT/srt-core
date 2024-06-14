@@ -2,16 +2,16 @@ from setuptools import setup, find_packages
 
 setup(
     name='srt-core',
-    version='0.1.3',
-    packages=find_packages(),  # This will find and include all packages
+    version='0.1.4',
+    packages=find_packages(include=['srt_core', 'srt_core.*']),  # Ensure it includes the srt_core package
     install_requires=[
         'pyyaml',
         'logging',
     ],
     entry_points={
         'console_scripts': [
-            'config-cli=config.config:main',
-            'logger-cli=utils.logger:main',  # Corrected this line
+            'config-cli=srt_core.config.config:main',
+            'logger-cli=srt_core.utils.logger:main',
         ],
     },
     author='Suparious',
