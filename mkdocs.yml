@@ -1,4 +1,6 @@
 site_name: srt-core Documentation
+site_author: SolidRusT Networks
+copyright: Copyright &copy; 2024 SolidRusT Networks
 site_url: https://srt-core.readthedocs.io/
 repo_url: https://github.com/SolidRusT/srt-core
 edit_uri: ""
