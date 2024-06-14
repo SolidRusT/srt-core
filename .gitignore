@@ -167,3 +167,4 @@ __pycache__/
 *.log
 .venv/
 config.yaml
+logs/
