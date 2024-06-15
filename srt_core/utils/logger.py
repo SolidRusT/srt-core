@@ -47,6 +47,10 @@ class Logger:
 
         self.logger = logging.getLogger(persona_full_name)
 
+    def log(self, level, message):
+        """Log a message with a given severity level."""
+        self.logger.log(level, message)
+
     def debug(self, msg, *args, **kwargs):
         """Log a message with severity 'DEBUG'."""
         self.logger.debug(msg, *args, **kwargs)
