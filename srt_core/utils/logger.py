@@ -25,12 +25,12 @@ class Logger:
             except yaml.YAMLError as e:
                 raise ValueError(f"Error reading YAML file: {e}")
 
-        self.debug = self.config.get("debug", False)
+        self.debugging = self.config.get("debugging", False)
         self.persona_name = os.environ.get("PERSONA", "Default")
 
     def setup_logging(self):
         """Setup logging based on the configuration."""
-        log_level = logging.DEBUG if self.debug else logging.INFO
+        log_level = logging.DEBUG if self.debugging else logging.INFO
         logs_path = self.config.get("logs_path", "./logs")
         
         if not os.path.exists(logs_path):
