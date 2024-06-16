@@ -2,7 +2,7 @@
 
 ![SolidRusT Networks](https://solidrust.net/images/android-chrome-192x192.png)
 
-[![Documentation Status](https://readthedocs.org/projects/srt-core/badge/?version=latest)](https://srt-core.readthedocs.io/en/latest/?badge=latest) [![Package version](https://img.shields.io/pypi/v/srt-core?color=%2334D058&label=pypi%20package)](https://pypi.org/project/srt-core) [![Supported Python versions](https://img.shields.io/pypi/pyversions/srt-core.svg?color=%2334D058)](https://pypi.org/project/srt-core)
+[![Documentation Status](https://readthedocs.org/projects/srt-core/badge/color=%2334D058&?version=latest)](https://srt-core.readthedocs.io/en/latest/?badge=latest) [![Package version](https://img.shields.io/pypi/v/srt-core?color=%2334D058&label=pypi%20package)](https://pypi.org/project/srt-core) [![Supported Python versions](https://img.shields.io/pypi/pyversions/srt-core.svg?color=%2334D058)](https://pypi.org/project/srt-core)
 
 SolidRusT Core Libraries
 
